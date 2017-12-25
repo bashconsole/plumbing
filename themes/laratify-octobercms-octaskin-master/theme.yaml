@@ -1,0 +1,6 @@
+name: "Plumbing"
+description: "Plumbing AB."
+author: Laratify
+homepage: "http://plumbing.bashconsole.org"
+code: octobercms-octaskin
+form: config/fields.yaml
