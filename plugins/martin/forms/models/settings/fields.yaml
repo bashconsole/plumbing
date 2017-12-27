@@ -1,0 +1,47 @@
+#fields:
+    #
+    # section_flash_messages:
+    #     label: martin.forms::lang.settings.section_flash_messages
+    #     type : section
+    #
+    # global_messages_success:
+    #          label       : martin.forms::lang.settings.global_messages_success.label
+    #          commentAbove: martin.forms::lang.settings.global_messages_success.comment
+    #          span        : left
+    #          type        : text
+    #
+    # global_messages_errors:
+    #          label       : martin.forms::lang.settings.global_messages_errors.label
+    #          commentAbove: martin.forms::lang.settings.global_messages_errors.comment
+    #          span        : left
+    #          type        : text
+
+tabs:
+    fields:
+    
+        global_hide_button:
+            label  : martin.forms::lang.settings.global_hide_button
+            comment: martin.forms::lang.settings.global_hide_button_desc
+            type   : switch
+            default: false
+            tab    : martin.forms::lang.settings.tabs.general
+
+        #section_recaptcha:
+        #    label: martin.forms::lang.settings.section_recaptcha
+        #    type : section
+        #    tab  : martin.forms::lang.settings.tabs.recaptcha
+
+        recaptcha_help:
+            type   : partial
+            path   : $/martin/forms/models/settings/_recaptcha_help.htm
+            tab    : martin.forms::lang.settings.tabs.recaptcha
+
+        recaptcha_site_key:
+            label: martin.forms::lang.settings.recaptcha_site_key
+            span : left
+            tab  : martin.forms::lang.settings.tabs.recaptcha
+
+        recaptcha_secret_key:
+            label: martin.forms::lang.settings.recaptcha_secret_key
+            span : right
+            tab  : martin.forms::lang.settings.tabs.recaptcha            

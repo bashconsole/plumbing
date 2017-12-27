@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'driver' => 'mail',
+    'driver' => 'sendmail',
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,12 @@ return [
     |
     */
 
-    'from' => ['address' => 'noreply@domain.tld', 'name' => 'OctoberCMS'],
+    'from' => ['address' => 'bashconsole@gmail.com', 'name' => 'Plumbing AB'],
+
+    'to' => [
+            'address' => 'bashconsole@gmail.com',
+            'name' => 'catch all email'
+    ],
 
     /*
     |--------------------------------------------------------------------------

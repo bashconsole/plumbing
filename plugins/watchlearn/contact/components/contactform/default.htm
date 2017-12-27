@@ -1,0 +1,38 @@
+
+<form
+id="main-contact-form" name="contact-form" ata-request="onSend" data-request-success="alert('Message Sent')">
+  <div class="lt-row row">
+    <div class="input-field lt-col col s6">
+      <input type="text" class="validate" id="name" name="name">
+      {{ errors.first('name') }}
+      <label for="name" class="active">Your name</label>
+    </div>
+  </div>
+  <div class="lt-row row">
+    <div class="input-field lt-col col s12">
+      <input type="email" class="validate" id="email" name="email">
+      {{ errors.first('email') }}
+      <label data-success="right" data-error="wrong" for="email">Your email</label>
+    </div>
+  </div>
+  <div class="lt-row row">
+    <div class="input-field lt-col col s12">
+      <textarea id="content" name="content" class="materialize-textarea"></textarea>
+      <label for="content">Your message</label>
+    </div>
+  </div>
+
+  <div class="lt-vertical-spacer"></div>
+
+  <div class="lt-row row">
+    <div class="lt-col col s12">
+      <button class="btn-large waves-effect waves-light" type="submit">Submit <i class="material-icons right">send</i></button>
+    </div>
+  </div>
+
+      <ul>
+        {% for error in errors.all() %}
+            <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+</form>

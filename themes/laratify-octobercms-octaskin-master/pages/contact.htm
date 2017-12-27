@@ -2,8 +2,9 @@ title = "Contact"
 url = "/contact"
 layout = "octaskin"
 is_hidden = 0
-==
 
+[JanVince\SmallContactForm\Components\SmallContactForm contactForm]
+==
 <section id="lt-header" class="lt-section lt-section-fullwidth section">
   <div class="lt-container container">
     <div class="lt-content lt-header-content">
@@ -15,7 +16,14 @@ is_hidden = 0
 <section id="lt-mainpage" class="lt-section section">
   <div class="lt-container container">
     <div class="lt-content lt-mainpage-content">
-      {% partial "pages-contact/mainpage" %}
+    <div class="lt-row row">
+  <div class="lt-col col s12">
+    <p class="flow-text">Plumbing AB provides general customer service via email and aims to respond to all queries within 24 hours. Or phone +46 0707 478 578 for 24-7 service.</p>
+  </div>
+</div>
+
+<div class="lt-vertical-spacer"></div>
+      {% component  "contactForm" %}
     </div>
   </div>
 </section>
